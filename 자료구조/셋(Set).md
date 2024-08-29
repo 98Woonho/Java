@@ -23,7 +23,6 @@ public class HashSetExample {
 
         // 출력
         System.out.println("HashSet 내용: " + hashSet);
-        // 출력 예시: HashSet 내용: [바나나, 사과, 체리]
     }
 }
 
@@ -52,7 +51,6 @@ public class LinkedHashSetExample {
 
         // 출력
         System.out.println("LinkedHashSet 내용: " + linkedHashSet);
-        // 출력 예시: LinkedHashSet 내용: [사과, 바나나, 체리]
     }
 }
 
@@ -81,7 +79,6 @@ public class TreeSetExample {
 
         // 출력
         System.out.println("TreeSet 내용: " + treeSet);
-        // 출력 예시: TreeSet 내용: [사과, 바나나, 체리]
     }
 }
 
