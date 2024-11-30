@@ -29,6 +29,7 @@
 >             graph.add(new ArrayList<>());
 >         }
 > 
+>         // 간선 입력(만약 양방향 그래프이면 반대 방향 연결도 입력하면 됨)
 >         graph.get(1).add(2);
 >         graph.get(1).add(3);
 >         graph.get(1).add(4);

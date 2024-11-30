@@ -26,11 +26,11 @@ BFS는 재귀적으로 동작하지 않고 방문한 노드들을 차례로 저�
 >     public static List<List<Integer>> graph = new ArrayList<>();
 > 
 >     public static void main(String[] args) {
-> 
 >         for (int i = 0; i <= N; i++) {
 >             graph.add(new ArrayList<>());
 >         }
 > 
+>         // 간선 입력(만약 양방향 그래프이면 반대 방향 연결도 입력하면 됨)
 >         graph.get(1).add(2);
 >         graph.get(1).add(3);
 >         graph.get(1).add(4);
