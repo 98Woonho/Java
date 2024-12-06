@@ -389,14 +389,23 @@ String 클래스가 지닌 대표적인 메서드는 다음과 같다.
 >     public static void main(String[] args) {
 >         String binaryString = "1101"; // 2진수 문자열
 >         int decimal = Integer.parseInt(binaryString, 2); // 2진수를 10진수로 변환
+>         String newBinaryString = Integer.toString(decimal, 2); // 10진수를 2진수로 변환
+>         String OctalString = Integer.toString(decimal, 8); // 10진수를 8진수로 변환
+>         String hexString = Integer.toString(decimal, 16); // 10진수를 16진수로 변환
 >
 >         System.out.println("2진수 1101의 10진수 값: " + decimal);
+>         System.out.println("10진수 13의 2진수 값: " + newBinaryString);
+>         System.out.println("10진수 13의 8진수 값: " + OctalString);
+>         System.out.println("10진수 13의 16진수 값: " + hexString);
 >     } 
 > }
 > ```
 > ### 실행 결과
 > ```
-> 13
+> 2진수 1101의 10진수 값: 13
+> 10진수 13의 2진수 값: 1101
+> 10진수 13의 8진수 값: 15
+> 10진수 13의 16진수 값: d
 > ```
 
 ## 2. java.util 패키지
