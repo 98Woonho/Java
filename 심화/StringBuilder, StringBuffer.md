@@ -1,7 +1,16 @@
-# StringBuilder
+# StringBuilder, StringBuffer
 
-## StringBuilder란?
-Java에서 문자열을 조작하고 수정하기 위해 사용되는 클래스. `String`과 달리 `StringBuilder`는 가변적인 문자열을 처리하기 때문에 메모리와 성능 면에서 더 효율적임
+## StringBuilder, StringBuffer란?
+Java에서 문자열을 조작하고 수정하기 위해 사용되는 클래스. `String`과 달리 `StringBuilder`, `StringBuffer`는 가변적인 문자열을 처리하기 때문에 메모리와 성능 면에서 더 효율적임
+
+## StringBuilder와 StringBuffer의 차이
+두 클래스는 비슷한 기능을 제공하지만, 주요 차이점은 스레드 안전성이다.
+
+|특징|	StringBuilder|	StringBuffer|
+|-|-|-|
+|스레드 안전성|	❌ (비동기적)|	✅ (동기화 지원)|
+|속도|	빠름|	느림 (동기화로 인한 오버헤드)|
+|사용 환경|	싱글스레드 환경|	멀티스레드 환경|
 
 ## 주요 메서드
 1. `append(E element)`
