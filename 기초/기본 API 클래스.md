@@ -381,6 +381,24 @@ String 클래스가 지닌 대표적인 메서드는 다음과 같다.
 > 합격입니다.
 > ```
 
+또한 특정 진수를 지정하여 변환할 수도 있다.
+
+> ### 진수 지정 변환
+> ```java
+> public class Practice {
+>     public static void main(String[] args) {
+>         String binaryString = "1101"; // 2진수 문자열
+>         int decimal = Integer.parseInt(binaryString, 2); // 2진수를 10진수로 변환
+>
+>         System.out.println("2진수 1101의 10진수 값: " + decimal);
+>     } 
+> }
+> ```
+> ### 실행 결과
+> ```
+> 13
+> ```
+
 ## 2. java.util 패키지
 `java.util` 날짜와 시간 정보를 제공해 주는 `Date` 클래스와 `Calendar` 클래스가 있다. 최근에는 날짜를 표현할 때 `Date` 클래스보다는 `Calendar` 클래스를 사용하는 것을 권장하고 있으며, `Date` 클래스는 많은 기능이 종료를 기다리고 있다. 따라서 우리는 `Calendar` 클래스의 사용 방법에 대해 알아보자.
 
